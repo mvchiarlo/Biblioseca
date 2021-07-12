@@ -6,12 +6,11 @@ using System.Threading.Tasks;
 
 namespace Biblioseca.Model
 {
-    public class Author
+    class User
     {
-        public virtual int Id { get; set; } //aunque no xsita n el modelo es para relacionalo con la bdd
+        public virtual int Id { get; set; }
         public virtual string FirstName { get; set; }
         public virtual string LastName { get; set; }
-
-        public List<Book> Book;
+        public virtual string UserName { get; set; }
     }
 }
