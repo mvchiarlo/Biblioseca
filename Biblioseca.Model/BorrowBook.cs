@@ -12,6 +12,7 @@ namespace Biblioseca.Model
         public virtual User User { get; set; }
         public DateTime DateTime { get; set; }
 
+
     }
 
 

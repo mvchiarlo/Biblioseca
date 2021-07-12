@@ -9,5 +9,6 @@ namespace Biblioseca.Model
     public class Category
     {
         public virtual string Title { get; set; }
+
     }
 }
