@@ -14,6 +14,7 @@ namespace Biblioseca.Model
         public virtual string Description { get; set; }
         public virtual Category Category { get; set; }
         public virtual string ISBN { get; set; }
+        public virtual double Price { get; set; }
 
     }
 }

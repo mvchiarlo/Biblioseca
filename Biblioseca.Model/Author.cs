@@ -12,6 +12,6 @@ namespace Biblioseca.Model
         public virtual string FirstName { get; set; }
         public virtual string LastName { get; set; }
 
-        public List<Book> Book;
+        //public List<Book> Book;
     }
 }

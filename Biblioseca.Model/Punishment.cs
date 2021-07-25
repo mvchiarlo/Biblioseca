@@ -6,10 +6,12 @@ using System.Threading.Tasks;
 
 namespace Biblioseca.Model
 {
-    public class Category
+    class Punishment
     {
         public virtual int Id { get; set; }
-        public virtual string Name { get; set; }
+        public virtual User User { get; set; }
+        public virtual BorrowBook BorrowBook { get; set; }
+        public virtual int Count { get; set; }
 
     }
 }

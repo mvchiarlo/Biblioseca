@@ -1,0 +1,19 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<hibernate-mapping xmlns="urn:nhibernate-mapping-2.2"
+  assembly="Biblioseca.Model"
+  namespace="Biblioseca.Model">
+  <class name="Punishment" table="Punishments">
+    <id name="Id">
+      <generator class="identity" />
+    </id>
+    <property name="Count">
+      <column name="Count" length="200" not-null="true" />
+    </property>
+    <many-to-one name="User" class="User">
+      <column name="UserId" sql-type="int" not-null="true" />
+    </many-to-one>
+    <many-to-one name="BorrowBook" class="BorrowBook">
+      <column name="BorrowBookId" sql-type="int" not-null="true" />
+    </many-to-one>
+  </class>
+</hibernate-mapping>
